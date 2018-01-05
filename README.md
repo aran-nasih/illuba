@@ -17,7 +17,7 @@ Shopping web-app (unfinished)
 4. Run this command in root directory
 ```PORT=3001 node server/www```
 <br/>
-..* oO use nodemon for auto restart server after saving
+* oO use nodemon for auto restart server after saving
 ```PORT=3001 nodemon server/www```
 <br/>
 5. Finally start React, in client directory run
