@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'nobel-light';
+  src: url('../../fonts/nobel-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'lanenar';
+  src: url('../../fonts/LANENAR.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Existence-Light';
+  src: url('../../fonts/Existence-Light.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'goeslim';
+  src: url('../../fonts/goeslim.otf') format('truetype');
+}
+
+
+.home-title-wrapper {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'goeslim' !important;
+  position: absolute;
+  top: 220px;
+  color: white;
+  width: 500px;
+}
+
+.home-title-header h2 {
+  margin: 0px;
+  font-size: 2.6em
+}
+
+.home-title-desc {
+  font-family: 'lanenar' !important;
+  font-size: 1.2em
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .home-title-header {
+    color: #2CD4D9;
+  }
+  
+  .home-title-desc p{
+    color: #A951ED;
+    font-weight: bolder;
+  }
+
+  .home-title-wrapper {
+    background-color: white;
+    width: 70%;
+    border-radius: 8px;
+    padding: 2% 4% 4% 4%;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 20px 0px rgba(46,61,73,0.15);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home-title-wrapper {
+    width: 84%;
+  }
+
+  .home-title-desc p{
+    font-weight: 100;
+  }
+
+  .home-title-header {
+    font-size: .8em;
+  }
+}
+
+
+
+
+

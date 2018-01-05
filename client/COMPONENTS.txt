@@ -1,0 +1,114 @@
+
+SOME COMPONENETS THAT WE USE OFTEN... ALL THEIR STYLES ARE IN THE [ baseStyle.js ] FILE SO MAKE SURE TO IMPORT IT IN YOUR FILE.
+import {baseStyles, baseColors, baseToggleStyle} from '../baseStyles';
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+TEXT INPUT:
+import TextField from 'material-ui/TextField';
+	<TextField
+            style={baseStyles.baseTextInput}
+            onChange={(obj, newValue) => this.setState({employeeSalary: newValue})}
+            value={this.state.employeeSalary}
+            floatingLabelText="LABEL"
+            floatingLabelStyle={{color: '#9E9E9E'}}
+            floatingLabelShrinkStyle={{color: baseColors.bgmBlue, fontSize: '1.2em'}}
+            underlineStyle={{borderColor: '#BDBDBD'}}
+        />
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+SELECT
+import SelectField from 'material-ui/SelectField';
+import MenuItem from 'material-ui/MenuItem';
+
+	      <SelectField
+                floatingLabelText="??????"
+                value={this.state.itemCompany}
+                style={baseStyles.baseSelect}
+                underlineStyle={{borderColor: baseColors.baseUnderlineBorderColor}}
+                floatingLabelStyle={{color: baseColors.bgmBlue, fontSize: baseStyles.baseFloatingLabelFont}}
+                style={baseStyles.baseSelect}
+                onChange={(event, index, value) => this.setState({itemCompany: value})}
+                required
+              >
+                {this.getSelectMenuData(dataTest)}
+              </SelectField>
+
+  
+  getSelectMenuData(arrayOfData){
+    const menuItems = arrayOfData.map((itemValue) => {
+      return(
+        <MenuItem value={itemValue} primaryText={itemValue}/>
+      )
+    })
+    return menuItems
+  }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+DATE PICKER"
+import DatePicker from 'material-ui/DatePicker';
+	<DatePicker hintText="LABEL" style={baseStyles.baseTextInput}
+            textFieldStyle={{color: '#9E9E9E'}}
+            style={baseStyles.baseDatePicker}
+            textFieldStyle={{width: '100%'}}
+            onChange={(obj, newValue) => this.setState({employeeStartDate: newValue})}
+	    value={this.state.employeeStartDate}
+        />
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+TOGGLE:
+import Toggle from 'material-ui/Toggle';
+NOTE: import baseToggleStyle from baseStyles
+
+	PINK:
+		<Toggle
+                  label="LABEL"
+                  defaultToggled={this.state.allResp}
+                  onToggle={(event, isChecked) => this.setState({test1: isChecked})}
+                  labelPosition="right"
+                  labelStyle={{margin: '0 16px'}}
+                  thumbStyle={baseToggleStyle.thumbOff}
+                  trackStyle={baseToggleStyle.trackOff}
+                  thumbSwitchedStyle={baseToggleStyle.thumbSwitched}
+                  trackSwitchedStyle={baseToggleStyle.trackSwitched}
+                  style={baseToggleStyle.toggle}
+                />
+
+	BLUE:
+	      <Toggle
+                label="LABEL"
+                defaultToggled={this.state.allResp}
+                onToggle={(event, isChecked) => this.setState({test1: isChecked})}
+                labelPosition="right"
+                labelStyle={{margin: '0 16px'}}
+                style={baseToggleStyle.toggle}
+              />
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+BUTTON:
+import RaisedButton from 'material-ui/RaisedButton';
+	PINK:
+		<RaisedButton label="LABEL" primary={true} style={baseStyles.baseButton}
+                 onTouchTap={this.handleSaveButton.bind(this)}/>
+	
+	BLUE:              
+		<RaisedButton label="LABEL" secondary={true} style={baseStyles.baseButton}
+                onTouchTap={this.handleWipeButton.bind(this)}/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

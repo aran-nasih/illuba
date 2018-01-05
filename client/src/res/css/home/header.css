@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'z-arista';
+  src: url('../../fonts/z-arista.alternate-light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+ }
+
+@font-face {
+  font-family: 'Corporate';
+  src: url('../../fonts/Corporate.otf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+ }
+
+ @font-face {
+  font-family: 'nobel-light';
+  src: url('../../fonts/nobel-light.ttf') format('truetype');
+ }
+
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: absolute;
+  z-index: 10;
+  box-sizing: border-box;
+  padding: 50px 16%;
+}
+
+.header-wrapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-wrapper ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.header-links-wrapper {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-link {
+  font-family: 'Corporate';
+  margin-left: 24px;
+}
+
+.header-link:hover {
+  border-bottom: 1.4px solid #5C27CE;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .header-wrapper {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .header-main {
+    padding: 0 4% !important
+  }
+
+  .header-search-main {
+    width: 54% !important;
+  }
+
+  .login-link-main {
+    display: none !important;
+  }
+
+  .search-link-main {
+    margin: 0px !important
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
