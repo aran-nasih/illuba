@@ -5,13 +5,14 @@ Shopping web-app (unfinished)
 
 # Getting started
 
+### installation
 In root directory run
 ```npm install```
 <br/>
 In client directory run
 ```npm install``` as well
 <br/>
-<br/>
+### Starting App
 Start Express on port 3001 as React normally starts on 3000
 <br/>
 Run this command in root directory
@@ -23,4 +24,4 @@ Or use nodemon for auto restart server after saving
 Finally start React, in client directory run
 ```npm start```
 <hr/>
-Please see [this repository](https://github.com/aran-nasih/react-express-mongodb) for more info on how it works and deployment.
+Please see [this repository](https://github.com/aran-nasih/react-express-mongodb/) for more info on how it works and deployment.
