@@ -6,9 +6,9 @@ Shopping web-app (unfinished)
 # Getting started
 
 In root directory run
-```npm install```
-and in client directory run
-```npm install```
+```npm install``` <hr/>
+in client directory run
+```npm install``` as well
 
 Start Express on port 3001 as React normally starts on 3000
 ```PORT=3001 node server/www```
